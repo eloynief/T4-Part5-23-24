@@ -6,6 +6,9 @@ public class Main {
 
 		//
 		int[][] tabla= {{1,2,3},{2,3,2},{3,2,1}};
+
+		//tabla de la clase
+		int[][] tabla2= {{4,9,2},{3,5,7},{8,1,6}};
 		
 		//guarda la muestra si la tabla es simetrica
 		boolean esMatrizMagica=false;
