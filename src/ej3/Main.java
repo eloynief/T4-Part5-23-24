@@ -34,19 +34,38 @@ public class Main {
 		
 		nums=new int [n][m];
 		
+		//
+		cambiaValores(nums);
 		
-		cambiaValores(nums, n, m);
-		
-		System.out.println(nums[n-1][m-1]);
-		
-		
+		//
+		for(int[]fila:nums) {
+			for(int valor:fila) {
+				System.out.print(valor+"\t");
+				
+			}
+			System.out.println();
+			
+		}
 		
 		
 		
 	}
 
-	private static void cambiaValores(int[][] nums, int n, int m) {
-		nums[n-1][m-1]=10*n+m;
+	private static void cambiaValores(int[][] nums) {
+		
+		
+		for(int n=0;n<nums.length;n++) {
+			
+			for(int m=0;m<nums[0].length;m++) {
+
+				
+				nums[n][m]=10*n+m;
+			}
+			
+			
+		}
+		
+		
 	}
 
 }
